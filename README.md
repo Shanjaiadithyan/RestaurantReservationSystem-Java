@@ -6,6 +6,12 @@ Application created using-
 Language: Java 1.8 , J2EE
 Database: MySQL 5.7
 Server: Tomcat 7.0
+IDE: Eclipse
+
+Required jar: mysql-connector-java-5.0.8-bin.jar
+
+Steps to create project:
+Eclipse -> File -> New -> Dynamic Web Project
 
 Setup MySQL database before running the app-
 Database name: restaurantreservation
