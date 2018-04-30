@@ -1,4 +1,5 @@
 Application Name: Restaurant Reservation System
+
 To run the app in browser : http://localhost:8000/RestaurantReservationApp/
 
 Application created using-
@@ -10,11 +11,13 @@ Setup MySQL database before running the app-
 Database name: restaurantreservation
 Username: root
 Password: root
+
 Tables to be created:
 1)	customer
 2)	day_availability
 3)	reservation
 4)	restaurant
+
 
 create table day_availability
 (
@@ -31,6 +34,7 @@ insert into day_availability values('Thursday',10);
 insert into day_availability values('Friday',10);
 insert into day_availability values('Saturday',10);
 
+
 create table customer
 (
 cust_id int primary key auto_increment,
@@ -45,7 +49,9 @@ rest_id int primary key,
 rest_name varchar(20)
 );
 
+
 insert into restaurant values(100,'Taj');
+
 create table reservation
 (
 reservation_id int primary key auto_increment,
@@ -58,6 +64,3 @@ foreign key (restaurant_id) references restaurant(rest_id),
 foreign key (customer_id) references customer(cust_id),
 foreign key (reservation_day) references day_availability(day_of_week)
 );
-
-
-
